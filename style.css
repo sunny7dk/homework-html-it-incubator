@@ -53,8 +53,14 @@ td {
     color: #fff;
 }
 
+.name-company {
+    font-weight: 700;
+    font-size: 20px;
+    color: #fff;
+}
+
 .about-me {
-    background: #fafaff;
+    background-color: #fafaff;
     padding: 60px 0 356px;
     min-height: 100vh;
 }
