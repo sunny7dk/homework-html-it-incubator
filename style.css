@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    color: #303030; 
+}
+
+ul, ol {
+    padding: 0 0 0 20px;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+label {
+    font-weight: 400;
+    font-size: 16px;
+}
+
+th, td {
+    border: 1px solid #95a1bb;
+
+}
+
+th {
+    padding: 12px 15px;
+    font-weight: 700;
+    font-size: 14px;
+    text-align: center;
+}
+
+td {
+    padding: 12px 15px;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.subtitle {
+    font-weight: 700;
+    font-size: 24px;
+    margin: 0 0 25px;
+}
+
+
+.header {
+    background: #2965f1;
+    padding: 23px 0;
+    font-weight: 700;
+    font-size: 20px;
+    color: #fff;
+}
+
+.about-me {
+    background: #fafaff;
+    padding: 60px 0 356px;
+    min-height: 100vh;
+}
+
+.title {
+    font-weight: 700;
+    font-size: 48px;
+    margin: 0 0 20px;
+}
+
+.descr-me {
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.about-me-img {
+    max-width: 715px;
+    width: 100%;
+    height: auto;
+}
+
+.hobbies {
+    fill: #fff;
+    padding: 100px 0;
+}
+
+.select-city {
+    border: 1px solid rgba(48, 48, 48, 0.3);
+    border-radius: 5px;
+    width: 150px;
+    padding: 8px 60px 8px 12px;
+    font-weight: 400;
+    font-size: 16px;
+    background: url(./assets/icons/down-sparow.svg) no-repeat right 14px top 15px;
+    appearance: none;
+}
+
+
+.list.books {
+    list-style-image: url(./assets/icons/list-item.svg);
+    list-style-type: none;
+}
+
+.user-skill-input {
+    width: 330px;
+    padding: 8px 215px 8px 12px;
+    border: 1px solid rgba(48, 48, 48, 0.3);
+    border-radius: 5px;
+    appearance: none;
+}
+
+.btn {
+    border-radius: 5px;
+    width: 125px;
+    height: 36px;
+    background: #2965f1;
+    border: none;
+    font-weight: 700;
+    font-size: 14px;
+    color: #fff;
+}
+
+.line {
+    margin: 60px 0;
+}
+
+.table {
+    border-collapse:collapse;
+}
+
+.footer {
+    padding: 27px 0;
+    background: rgba(163, 167, 255, 0.3);
+}
+
+.link-footer {
+    font-weight: 400;
+    font-size: 14px;
+    color: #2965f1;
+    text-decoration: none;
+}

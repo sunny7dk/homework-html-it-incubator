@@ -4,75 +4,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
     <title>It-incubator precourse</title>
 </head>
 
 <body>
-    <header>
-        <span>IT-INCUBATOR</span>
+    <header class="header">
+        <span class="name-company">IT-INCUBATOR</span>
     </header>
 
-    <section data-cy="hw1-section-main-pre">
-        <h1>Дусалиев Досан Канатович</h1>
-        <p>Интересуюсь программированием, в связи с чем начал обучаться в IT-INCUBATOR. В свободное время люблю читать,
+    <section class="about-me" data-cy="hw1-section-main-pre">
+        <h1 class="title">Дусалиев Досан Канатович</h1>
+        <p class="descr-me">Интересуюсь программированием, в связи с чем начал обучаться в IT-INCUBATOR. В свободное время люблю читать,
             слушать музыку и гулять на свежем воздухе.</p>
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRFlCESegcJidWGSYWaB4MyqH5rCl_DT3OroA&s"
+        <img class="about-me-img" src="./assets/img/20250502_1503_Novice-Developer_s-Haven_simple_compose_01jt8756d9f6ztpdb5rpm9g1pw.webp"
             alt="programing">
-    </section>
+    </section>  
 
-    <section data-cy="hw1-section-about-pre">
-        <h2>Город в котором я живу:</h2>
+    <section class="hobbies" data-cy="hw1-section-about-pre">
         <form>
-            <label for="city-select">
-            </label>
-            <select name="city" id="city-select">
-                <option value="stambul">Стамбул</option>
-                <option value="tashkent" selected>Ташкент</option>
-                <option value="almaty">Алматы</option>
+            <select class="select-city" name="city">
+                <option class="select-city-item" value="stambul">Стамбул</option>
+                <option class="select-city-item" value="tashkent" selected>Ташкент</option>
+                <option class="select-city-item" value="almaty">Алматы</option>
             </select>
         </form>
 
         <div data-cy="hw1-unordered-list-box-pre">
-            <h2>Любимые книги:</h2>
-            <ul>
-                <li>"По ту сторону свободы и достоинства" --- Скиннер Б.Ф</li>
-                <li>"Риторика мотивов" --- Берк К.Д</li>
-                <li>"Язык в действии" --- Хаякава С.И</li>
+            <h2 class="subtitle books">Любимые книги:</h2>
+            <ul class="list books">
+                <li class="list-item icon">"По ту сторону свободы и достоинства" --- Скиннер Б.Ф</li>
+                <li class="list-item icon">"Риторика мотивов" --- Берк К.Д</li>
+                <li class="list-item icon">"Язык в действии" --- Хаякава С.И</li>
             </ul>
         </div>
         <div data-cy="hw1-ordered-list-box-pre">
-            <h2>Любимые блюда:</h2>
-            <ol>
-                <li>Борщ с салом и бородинским хлебом</li>
-                <li>Блины</li>
-                <li>Картофель жареный с луком</li>
+            <h2 class="subtitle dishes">Любимые блюда:</h2>
+            <ol class="list dishes">
+                <li class="list-item">Борщ с салом и бородинским хлебом</li>
+                <li class="list-item">Блины</li>
+                <li class="list-item">Картофель жареный с луком</li>
             </ol>
         </div>
 
         <div data-cy="hw1-skills-box-pre">
-            <h2>Мои скиллы:</h2>
+            <h2 class="subtitle">Мои скиллы:</h2>
             <form>
-                <label for="checkbox_html">
-                    <input type="checkbox" id="checkbox_html" name="html" checked="checked">HTML
+                <label class="checkbox-item">
+                    <input type="checkbox" name="html" checked="checked">HTML
                 </label>
-                <label for="checkbox_css">
-                    <input type="checkbox" id="checkbox_css" name="css">CSS
+                <label class="checkbox-item">
+                    <input type="checkbox" name="css">CSS
                 </label>
-                <label for="checkbox_javascript">
-                    <input type="checkbox" id="checkbox_javascript" name="javascript">Java Script
+                <label class="checkbox-item">
+                    <input type="checkbox" name="javascript">Java Script
                 </label>
             </form>
         </div>
         <form>
-            <label for="answer_user_skill">
-                <input type="text" id="answer_user_skill" name="user_skill" placeholder="Новый скилл">
-            </label>
+                <input class="user-skill-input" type="text" name="user_skill" placeholder="Новый скилл">
+                <button class="btn">Добавить</button>
         </form>
-        <button id="button_user_skill">Добавить</button>
-        <hr>
+        <hr class="line">
 
-        <table data-cy="hw-about-table-pre" border="">
-            <caption><h3>Языки программирования которые я планирую освоить</h3></caption>
+        <table class="table" data-cy="hw-about-table-pre" border="">
+            <caption><h3 class="subtitle">Языки программирования которые я планирую освоить</h3></caption>
             <thead>
                 <tr>
                     <th>Язык программирования</th>
@@ -106,8 +105,8 @@
         </table>
     </section>
 
-    <footer data-cy="hw-footer-pre">
-        <a href="https://it-incubator.io/">it-incubator</a>
+    <footer class="footer" data-cy="hw-footer-pre">
+        <a class="link-footer" href="https://it-incubator.io/">it-incubator</a>
     </footer>
 </body>
 
