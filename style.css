@@ -65,14 +65,14 @@ select {
 }
 
 .frameworks-list {
-    padding-left: 20px;
+    padding: 0 20px;
     list-style-image: url(./assets/icons/sparrow-right.svg);
     font-weight: 400;
     font-size: 16px;
 }
 
 .books-list {
-    padding-left: 20px;
+    padding: 0 20px;
     font-weight: 400;
     font-size: 16px;
 }
