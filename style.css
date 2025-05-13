@@ -38,7 +38,7 @@ header span {
 }
 
 .main-image {
-    min-width: 715px;
+    max-width: 715px;
 }
 
 
@@ -65,15 +65,14 @@ select {
 }
 
 .frameworks-list {
-    padding: 0 0 0 20px;
-    list-style-type: none;
+    padding-left: 20px;
     list-style-image: url(./assets/icons/sparrow-right.svg);
     font-weight: 400;
     font-size: 16px;
 }
 
 .books-list {
-    padding: 0 0 0 20px;
+    padding-left: 20px;
     font-weight: 400;
     font-size: 16px;
 }
@@ -114,11 +113,11 @@ table {
 }
 
 th, td {
-    padding: 12px 14px;
+    padding: 12px 15px;
 }
 
 footer {
-    padding: 27px 0;
+    padding: 26px 0;
     background: rgba(163, 167, 255, 0.3);
 }
 
