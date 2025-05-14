@@ -1,7 +1,13 @@
 * {
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1140px;
 }
 
 body {
@@ -10,7 +16,7 @@ body {
 }
 
 header {
-    background: #2965f1;
+    background-color: #2965F1;
     padding: 23px 0;
 }
 
@@ -21,15 +27,25 @@ header span {
 }
 
 .main-section {
+    background-color: #fafaff;
     padding: 60px 0;
     min-height: 100vh;
-    background: #fafaff;
+    display: flex;
+}
+
+.main-section .wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.text-wrapper {
+    max-width: 425px;
 }
 
 .main-title {
-    margin: 0 0 20px;
     font-weight: 700;
     font-size: 48px;
+    margin-bottom: 20px;
 }
 
 .main-text {
@@ -41,40 +57,82 @@ header span {
     max-width: 715px;
 }
 
-
 .about-section {
+    background-color: #fff;
     padding: 100px 0;
-    fill: #fff;
+}
+
+.about-section .wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
 }
 
 select {
-    width: 150px;
-    padding: 8px 12px;
     border: 1px solid rgba(48, 48, 48, 0.3);
     border-radius: 5px;
+    width: 150px;
+    padding: 8px 12px;
     font-weight: 400;
     font-size: 16px;
-    background: url(./assets/icons/sparrow-selected.svg) no-repeat top 15px right 15px;
-    appearance: none;
+    appearance: none; 
+    background-image: url("./ep_arrow-down.svg");
+    background-repeat: no-repeat;
+    background-position: right 12px top 50%;
+}
+
+select:hover,
+.text-field:hover {
+    border: 1px solid #2965f1;
+}
+
+
+.info-wrapper {
+    display: flex;
 }
 
 .section-title {
-    margin: 0 0 25px;
     font-weight: 700;
     font-size: 24px;
+    margin-bottom: 25px;
+}
+
+.frameworks,
+.books {
+    min-width: 50%;
+}
+
+.frameworks-list,
+.books-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
 }
 
 .frameworks-list {
-    padding: 0 20px;
-    list-style-image: url(./assets/icons/sparrow-right.svg);
     font-weight: 400;
     font-size: 16px;
+    list-style-image: url(./solar_map-arrow-up-bold.svg);
+    padding-left: 20px;
+}
+
+.skills-block {
+    display: flex;
+    flex-direction: column;
+}
+
+.skills {
+    min-width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
 .books-list {
-    padding: 0 20px;
+    min-width: 50%;
     font-weight: 400;
     font-size: 16px;
+    padding-left: 20px;
 }
 
 .label {
@@ -82,23 +140,37 @@ select {
     font-size: 16px;
 }
 
+form {
+    margin-bottom: 40px;
+    order: -1;
+}
+
 .text-field {
-    width: 330px;
-    padding: 8px 12px;
     border: 1px solid rgba(48, 48, 48, 0.3);
     border-radius: 5px;
+    max-width: 330px;
+    width: 100%;
+    height: 36px;
+    background-color: rgba(255, 255, 255, 0);
+    padding: 8px 12px;
     font-weight: 400;
     font-size: 16px;
 }
 
 .btn {
-    padding: 10px 28px;
-    border-radius: 5px;
     border: none;
-    background: #2965f1;
+    border-radius: 5px;
+    width: 125px;
+    height: 36px;
+    background-color: #2965f1;
     font-weight: 700;
     font-size: 14px;
     color: #fff;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background: rgba(41, 101, 241, 0.9);
 }
 
 .line {
@@ -108,8 +180,9 @@ select {
 table {
     border: 1px solid #95a1bb;
     border-collapse: collapse;
-    font-weight: 400, 700;
+    font-weight: 400;
     font-size: 14px;
+    margin: 0 auto;
 }
 
 th, td {
@@ -117,8 +190,9 @@ th, td {
 }
 
 footer {
+    background-color: rgba(163, 167, 255, 0.3);
     padding: 26px 0;
-    background: rgba(163, 167, 255, 0.3);
+    text-align: center;
 }
 
 .footer-link {
@@ -126,4 +200,8 @@ footer {
     font-size: 14px;
     color: #2965f1;
     text-decoration: none;
+}
+
+.footer-link:hover {
+    text-decoration: underline;
 }
